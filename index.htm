@@ -10,5 +10,52 @@
 <code><strong>cssify(<em>object</em>)</strong> - turn the specified js object into a CSS class.</code>
 
 <p>📋 Wrap it in a <code>copy</code> to send that sucka straight to your clipboard. 📋</p>
+
+<p>Oh fine here's an example</p>
+<code><strong>cssify</strong>({
+    contextAwareLink: {display: 'inline-block', verticalAlign: 'top', float: 'left'},
+    contextAwareImage: {margin: 0, verticalAlign: 'top'},
+    contentCard: {marginBottom: 5},
+    summaryText: {
+        display: 'block',
+        margin: '0 0 3px 0px'
+    },
+    smallText: {display: 'block', marginLeft: '0px'},
+    icon: {height: '17px', backgroundSize: '15px 17px', position: 'relative', top: 2}
+});
+
+> ".contextAwareLink {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.contextAwareImage {
+    margin: 0;
+    vertical-align: top;
+}
+
+.contentCard {
+    margin-bottom: 5px;
+}
+
+.summaryText {
+    display: block;
+    margin: 0 0 3px 0px;
+}
+
+.smallText {
+    display: block;
+    margin-left: 0px;
+}
+
+.icon {
+    height: 17px;
+    background-size: 15px 17px;
+    position: relative;
+    top: 2px;
+}"
+</code>
+
 </body>
 </html>

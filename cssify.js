@@ -9,7 +9,7 @@ function cssify(CSS) {
   Object.keys(CSS).forEach(function(klass) { 
     output += '.' + klass + ' {\n' 
     Object.keys(CSS[klass]).forEach(function(cssProp) { 
-     output += '    ' + js2css(cssProp) + ': ' + CSS[klass][cssProp].replace(/'/g, '') + ';\n';
+     output += '    ' + js2css(cssProp) + ': ' + CSS[klass][cssProp] + ';\n';
     });
     output += '}\n\n';
   });
